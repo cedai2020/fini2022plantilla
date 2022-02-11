@@ -9,7 +9,7 @@ export class VariablesService {
   public textoBarraSuperior: string = "FESTIVAL INTERNACIONAL DE LA IMAGEN";
   textoFINInosotros:string = 'Festival Internacional de la Imagen';
   titulo:string;
-  tituloGeneral:string = 'GENERAL';
+  tituloGeneral:string = 'MENÚ';
   tituloProgramaTipo:string = 'PROGRAMA';
   tituloProgramaDias:string;
   tituloProgramaEspecifico:string;

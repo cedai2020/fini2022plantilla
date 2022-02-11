@@ -20,7 +20,14 @@ ion-grid{
     }
   }
 }
+  
+hr{
+  background-color: rgb(204, 203, 203);
+  border: 0 none;
+  color: #eee;
+  height: 1px;  
 
+}
 ion-toolbar{
   --border-width: 0px;
   --padding-start: 0px;

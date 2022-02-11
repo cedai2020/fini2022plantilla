@@ -7,7 +7,15 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  
+  hr{
+    background-color: rgb(204, 203, 203);
+    border: 0 none;
+    color: #eee;
+    height: 1px;  
 
+  }
+  
   ion-grid{
     --ion-grid-width-md: 75%;
     --ion-grid-width-lg: 60%;
