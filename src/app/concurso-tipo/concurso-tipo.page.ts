@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
-import { VariablesService } from "../providers/variables.service";
-import { Router } from '@angular/router';
 import { NavigationExtras } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { VariablesService } from "../providers/variables.service";
 
 @Component({
   selector: 'app-concurso-tipo',
@@ -11,15 +10,28 @@ import { NavigationExtras } from '@angular/router';
 })
 export class ConcursoTipoPage implements OnInit {
 
-  constructor( public global: VariablesService, public router: Router ) { }
+  tipoConcurso:string;
+
+
+  constructor(  public global: VariablesService, private route: ActivatedRoute, public router: Router ) { 
+    //obtenemos el tipo de programa a listar
+    this.route.queryParams.subscribe(params => {
+      if (params) {
+        this.tipoConcurso = JSON.parse(params.tipoConcurso)
+      }
+      console.log("el tipo de concurso  a listar es: " + this.tipoConcurso);
+    });
+    
+   }
+
 
   ngOnInit() {
+
+    console.log("tipo concurso es:: " + this.tipoConcurso);
+    this.global.titulo = this.tipoConcurso;
   }
 
-  ionViewWillEnter(){
-    //console.log("entra a ionViewWillEnter");
-    this.global.titulo = this.global.tituloConcurso;
-  }
+
 
   goToConcursoEspecifico(tipo)
   {

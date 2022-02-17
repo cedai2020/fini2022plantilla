@@ -11,6 +11,7 @@ export class VariablesService {
   titulo:string;
   tituloGeneral:string = 'MENÚ';
   tituloProgramaTipo:string = 'PROGRAMA';
+  tituloConcursoTipo:string;
   tituloProgramaDias:string;
   tituloProgramaEspecifico:string;
   tituloConcurso:string = 'CONCURSO';

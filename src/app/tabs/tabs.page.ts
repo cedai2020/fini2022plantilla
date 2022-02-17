@@ -37,6 +37,9 @@ export class TabsPage {
           if( this.router.url==="/tabs/programa-tipo"){
             this.global.titulo = this.global.tituloProgramaTipo;
           }
+          if( this.router.url==="/tabs/concurso-tipo"){
+            this.global.titulo = this.global.tituloGeneral;
+          }
         }
       }
     );

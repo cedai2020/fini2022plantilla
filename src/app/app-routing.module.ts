@@ -57,6 +57,10 @@ const routes: Routes = [
   {
     path: 'imagen-amplificada',
     loadChildren: () => import('./imagen-amplificada/imagen-amplificada.module').then( m => m.ImagenAmplificadaPageModule)
+  },
+  {
+    path: 'concurso',
+    loadChildren: () => import('./concurso/concurso.module').then( m => m.ConcursoPageModule)
   }
 ];
 @NgModule({

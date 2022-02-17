@@ -32,7 +32,7 @@ export class Tab1Page {
 
   goToConcurso( )
   {
-    this.router.navigate( ["/tabs/concurso-tipo"] );
+    this.router.navigate( ["/tabs/concurso"] );
   }
 
   goToPais( )

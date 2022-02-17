@@ -60,6 +60,10 @@ const routes: Routes = [
         loadChildren: () => import('../buscar/buscar.module').then(m => m.BuscarPageModule)
       },
       {
+        path: 'concurso',
+        loadChildren: () => import('../concurso/concurso.module').then(m => m.ConcursoPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
