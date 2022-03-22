@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">fini2022</string>
+    <string name="title_activity_main">fini2022</string>
+    <string name="package_name">com.uaeh</string>
+    <string name="custom_url_scheme">com.uaeh</string>
+</resources>

@@ -64,6 +64,10 @@ const routes: Routes = [
         loadChildren: () => import('../concurso/concurso.module').then(m => m.ConcursoPageModule)
       },
       {
+        path: 'concurso-resultado',
+        loadChildren: () => import('../concurso-resultado/concurso-resultado.module').then(m => m.ConcursoResultadoPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

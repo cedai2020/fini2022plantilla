@@ -61,6 +61,10 @@ const routes: Routes = [
   {
     path: 'concurso',
     loadChildren: () => import('./concurso/concurso.module').then( m => m.ConcursoPageModule)
+  },
+  {
+    path: 'concurso-resultado',
+    loadChildren: () => import('./concurso-resultado/concurso-resultado.module').then( m => m.ConcursoResultadoPageModule)
   }
 ];
 @NgModule({
